@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-card-title>Remover task</mat-card-title>
+    <form>
+        <mat-form-field>
+            <input matInput name="titulo" placeholder="Título" [(ngModel)]="task.titulo" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="descricao" placeholder="Descrição" [(ngModel)]="task.descricao" disabled>
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput name="status" placeholder="Status" [(ngModel)]="task.status" disabled>
+        </mat-form-field>
+    </form>
+    <button mat-raised-button (click)="remove()" color="warn">
+        Remover
+    </button>
+    <button mat-raised-button (click)="cancel()">
+        Cancelar
+    </button>
+</mat-card>
