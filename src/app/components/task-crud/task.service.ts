@@ -10,7 +10,8 @@ import { Task } from './task.model';
 })
 export class TaskService {
 
-  baseUrl = "http://localhost:8080/tasklist/task";
+  //baseUrl = "http://localhost:8080/tasklist/task";
+  baseUrl = "http://ec2-3-142-255-209.us-east-2.compute.amazonaws.com:8080/tasklist/task";
 
   constructor(private snackBar: MatSnackBar, private http: HttpClient) { }
 
