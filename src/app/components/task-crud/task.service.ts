@@ -12,7 +12,7 @@ export class TaskService {
 
   baseUrl = "https://ec2-3-142-255-209.us-east-2.compute.amazonaws.com:8443/tasklist/task";
   httpHeader = new HttpHeaders({
-    "Access-Control-Allow-Origin": "https://tasklist-supero.netlify.app",
+    "Access-Control-Allow-Origin": "*",
     "Access-Control-Allow-Methods": "POST, GET, PUT, DELETE",
     "Access-Control-Allow-Headers": "*",
     "Access-Control-Max-Age": "86400"    
